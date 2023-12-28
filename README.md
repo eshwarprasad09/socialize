@@ -83,8 +83,8 @@ Role-based authorization is implemented to manage user access rights. Roles are 
 
 ## Technical Stack
 
-- **Backend Framework:** [Specify your backend framework, e.g., Spring Boot]
-- **Database:** [Specify your database, e.g., PostgreSQL]
+- **Backend Framework:** [Spring Boot]
+- **Database:** [MySQL]
 - **Authentication:** JSON Web Tokens (JWT)
 - **Deployment:** Amazon Web Services (AWS)
 - **Validation:** Bean Validation
