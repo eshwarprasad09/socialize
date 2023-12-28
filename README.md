@@ -27,7 +27,7 @@ Welcome to Socialize, a feature-rich social networking application developed to 
    - Robust authentication and authorization using JSON Web Tokens (JWT) ensure secure access to resources.
 
 4. **Environment Profiles:**
-   - Separate development (dev) and quality assurance (qa) environment profiles configured in `application.properties` for efficient development and testing.
+   - Separate development (dev), quality assurance (qa), and production (prod) environment profiles configured in `application-dev.properties`, `application-qa.properties`, and `application-prod.properties` respectively for efficient development, testing, and production deployment.
 
 5. **AWS Deployment:**
    - The application is deployed on Amazon Web Services (AWS) for scalability and reliability.
@@ -49,10 +49,17 @@ Welcome to Socialize, a feature-rich social networking application developed to 
 - **Development (dev):**
   - Configuration optimized for local development.
   - Debugging enabled, comprehensive logging for ease of troubleshooting.
+  - Configuration file: `application-dev.properties`
 
 - **Quality Assurance (qa):**
   - Configuration tailored for testing environments.
   - Increased security measures and optimized settings for QA testing.
+  - Configuration file: `application-qa.properties`
+
+- **Production (prod):**
+  - Configuration optimized for a production environment.
+  - High-security measures and performance enhancements.
+  - Configuration file: `application-prod.properties`
 
 ## Authentication and Authorization
 
@@ -64,8 +71,13 @@ Welcome to Socialize, a feature-rich social networking application developed to 
 The application is deployed on AWS for optimal performance and scalability. Follow these steps to deploy the application locally or on your own AWS environment.
 
 1. Clone the repository.
-2. Configure the `application.properties` file with your environment-specific settings.
-3. Build and deploy the application.
+2. Choose the appropriate environment configuration file based on your deployment scenario:
+   - For local development: `application-dev.properties`
+   - For QA testing: `application-qa.properties`
+   - For production deployment: `application-prod.properties`
+3. Rename the chosen configuration file to `application.properties`.
+4. Configure the `application.properties` file with your environment-specific settings.
+5. Build and deploy the application.
 
 For AWS deployment, ensure that you have the necessary AWS credentials and permissions.
 
