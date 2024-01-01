@@ -26,6 +26,10 @@ Welcome to Socialize, a feature-rich social networking application developed to 
 3. **JWT Authentication and Authorization:**
    - Robust authentication and authorization using JSON Web Tokens (JWT) ensure secure access to resources.
 
+## Authentication and Authorization Flow Diagram
+
+![Authentication and Authorization Flow Diagram](src/main/resources/Picsart_24-01-01_10-45-18-232.jpg)
+
 4. **Environment Profiles:**
    - Separate development (dev), quality assurance (qa), and production (prod) environment profiles configured in `application-dev.properties`, `application-qa.properties`, and `application-prod.properties` respectively for efficient development, testing, and production deployment.
 
@@ -101,3 +105,5 @@ Role-based authorization is implemented to manage user access rights. Roles are 
 - **Deployment:** Amazon Web Services (AWS)
 - **Validation:** Bean Validation
 - **Role-Based Authorization:** Yes
+
+*Created by Eshwarprasad D - LinkedIn: [eshwarprasad-d-35495a1b2](https://www.linkedin.com/in/eshwarprasad-d-35495a1b2/)*
