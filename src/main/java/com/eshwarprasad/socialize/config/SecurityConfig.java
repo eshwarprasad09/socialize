@@ -59,6 +59,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests((authorize) ->
                         //authorize.anyRequest().authenticated()
                         authorize.requestMatchers(HttpMethod.GET, "/api/**").permitAll()
+                                .requestMatchers(HttpMethod.POST,"/api/v1/auth/**").permitAll()
                                 //.requestMatchers(HttpMethod.GET, "/api/categories/**").permitAll()
                                 .requestMatchers("/api/auth/**").permitAll()
                                 .requestMatchers("/swagger-ui/**").permitAll()
@@ -80,7 +81,7 @@ public class SecurityConfig {
 //    public UserDetailsService userDetailsService(){
 //        UserDetails ramesh = User.builder()
 //                .username("ramesh")
-//                .password(passwordEncoder().encode("ramesh"))
+//                .password(passwordEncoder().encode("eshwar"))
 //                .roles("USER")
 //                .build();
 //
