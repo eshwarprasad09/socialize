@@ -42,7 +42,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             if(!Optional.of(tracer).map(Tracer::currentTraceContext).map(CurrentTraceContext::context).isEmpty()) {
                 var context = tracer.currentTraceContext().context();
                 var traceId = context.traceId();
+                var spanId = context.spanId();
                 response.setHeader("trace-id", traceId);
+                response.setHeader("spand-Id",spanId);
             }
         }
 
